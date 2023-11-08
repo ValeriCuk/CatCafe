@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB442AFB9C8100544271 /* AppDelegate.swift */; };
 		45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB462AFB9C8100544271 /* SceneDelegate.swift */; };
-		45A0CB492AFB9C8100544271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* ViewController.swift */; };
+		45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */; };
 		45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4A2AFB9C8100544271 /* Main.storyboard */; };
 		45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4D2AFB9C8300544271 /* Assets.xcassets */; };
 		45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */; };
+		45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */; };
+		45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5A2AFC163800544271 /* MenuViewController.swift */; };
+		45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */; };
+		45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */; };
+		45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45A0CB412AFB9C8100544271 /* CatCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A0CB442AFB9C8100544271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A0CB462AFB9C8100544271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45A0CB482AFB9C8100544271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCafeViewController.swift; sourceTree = "<group>"; };
 		45A0CB4B2AFB9C8100544271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45A0CB4D2AFB9C8300544271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45A0CB502AFB9C8300544271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A0CB522AFB9C8300544271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatCafeHomeScreen.storyboard; sourceTree = "<group>"; };
+		45A0CB5A2AFC163800544271 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewController.swift; sourceTree = "<group>"; };
+		45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewCell.swift; sourceTree = "<group>"; };
+		45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BurgersTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,34 @@
 			children = (
 				45A0CB442AFB9C8100544271 /* AppDelegate.swift */,
 				45A0CB462AFB9C8100544271 /* SceneDelegate.swift */,
-				45A0CB482AFB9C8100544271 /* ViewController.swift */,
+				45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */,
+				45A0CB5A2AFC163800544271 /* MenuViewController.swift */,
+				45A0CB5E2AFC1E1300544271 /* Burgers */,
+				45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */,
 				45A0CB4A2AFB9C8100544271 /* Main.storyboard */,
 				45A0CB4D2AFB9C8300544271 /* Assets.xcassets */,
 				45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */,
 				45A0CB522AFB9C8300544271 /* Info.plist */,
 			);
 			path = CatCafe;
+			sourceTree = "<group>";
+		};
+		45A0CB5E2AFC1E1300544271 /* Burgers */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */,
+				45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */,
+			);
+			path = Burgers;
+			sourceTree = "<group>";
+		};
+		45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */,
+				45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */,
+			);
+			path = BurgersTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +158,9 @@
 			files = (
 				45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */,
 				45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */,
+				45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */,
 				45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */,
+				45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A0CB492AFB9C8100544271 /* ViewController.swift in Sources */,
+				45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */,
 				45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */,
+				45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */,
 				45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */,
+				45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */,
+				45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
