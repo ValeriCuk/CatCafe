@@ -1,10 +1,3 @@
-//
-//  MenuViewController.swift
-//  CatCafe
-//
-//  Created by Lera Cuk on 08.11.2023.
-//
-
 import UIKit
 
 class MenuViewController: UIViewController{

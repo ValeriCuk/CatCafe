@@ -181,11 +181,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.81176470590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BurgersTableViewCell" rowHeight="166" id="6ER-TL-8Hi">
-                                <rect key="frame" x="0.0" y="50" width="393" height="166"/>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BurgersTableViewCell" rowHeight="200" id="6ER-TL-8Hi">
+                                <rect key="frame" x="0.0" y="50" width="393" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ER-TL-8Hi" id="Sah-l8-5eA">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

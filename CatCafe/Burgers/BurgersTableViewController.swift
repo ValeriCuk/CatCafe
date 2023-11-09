@@ -1,10 +1,3 @@
-//
-//  BurgersViewController.swift
-//  CatCafe
-//
-//  Created by Lera Cuk on 08.11.2023.
-//
-
 import UIKit
 
 class BurgersTableViewController: UITableViewController{
@@ -30,6 +23,7 @@ class BurgersTableViewController: UITableViewController{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "BurgersTableViewCell", for: indexPath) as? BurgersTableViewCell else{
             return UITableViewCell()
         }
+        cell.backgroundColor = UIColor(red: 244/255, green: 207/255, blue: 255/255, alpha: 1)
         return cell
     }
 }
