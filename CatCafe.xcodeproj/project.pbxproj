@@ -9,40 +9,31 @@
 /* Begin PBXBuildFile section */
 		45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB442AFB9C8100544271 /* AppDelegate.swift */; };
 		45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB462AFB9C8100544271 /* SceneDelegate.swift */; };
-		45A0CB492AFB9C8100544271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* ViewController.swift */; };
+		45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */; };
 		45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4A2AFB9C8100544271 /* Main.storyboard */; };
 		45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4D2AFB9C8300544271 /* Assets.xcassets */; };
 		45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */; };
-		45A0CB672AFD111E00544271 /* Pods_CatCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */; };
-		45A0CB682AFD111E00544271 /* Pods_CatCafe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */; };
+		45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5A2AFC163800544271 /* MenuViewController.swift */; };
+		45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */; };
+		45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */; };
+		45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		45A0CB692AFD111E00544271 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				45A0CB682AFD111E00544271 /* Pods_CatCafe.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A0CB412AFB9C8100544271 /* CatCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A0CB442AFB9C8100544271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A0CB462AFB9C8100544271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45A0CB482AFB9C8100544271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCafeViewController.swift; sourceTree = "<group>"; };
 		45A0CB4B2AFB9C8100544271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45A0CB4D2AFB9C8300544271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45A0CB502AFB9C8300544271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A0CB522AFB9C8300544271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E39E3EA21268329DA00DCA21 /* Pods-CatCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCafe.debug.xcconfig"; path = "Target Support Files/Pods-CatCafe/Pods-CatCafe.debug.xcconfig"; sourceTree = "<group>"; };
-		EC34D17437A42F9897068547 /* Pods-CatCafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCafe.release.xcconfig"; path = "Target Support Files/Pods-CatCafe/Pods-CatCafe.release.xcconfig"; sourceTree = "<group>"; };
+		45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatCafeHomeScreen.storyboard; sourceTree = "<group>"; };
+		45A0CB5A2AFC163800544271 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewController.swift; sourceTree = "<group>"; };
+		45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewCell.swift; sourceTree = "<group>"; };
+		45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BurgersTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,28 +41,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A0CB672AFD111E00544271 /* Pods_CatCafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		34453E7BCD61A05A459D66EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		45A0CB382AFB9C8100544271 = {
 			isa = PBXGroup;
 			children = (
 				45A0CB432AFB9C8100544271 /* CatCafe */,
 				45A0CB422AFB9C8100544271 /* Products */,
-				EE64A8CC5C95AF794567D69E /* Pods */,
-				34453E7BCD61A05A459D66EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +68,10 @@
 			children = (
 				45A0CB442AFB9C8100544271 /* AppDelegate.swift */,
 				45A0CB462AFB9C8100544271 /* SceneDelegate.swift */,
-				45A0CB482AFB9C8100544271 /* ViewController.swift */,
+				45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */,
+				45A0CB5A2AFC163800544271 /* MenuViewController.swift */,
+				45A0CB5E2AFC1E1300544271 /* Burgers */,
+				45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */,
 				45A0CB4A2AFB9C8100544271 /* Main.storyboard */,
 				45A0CB4D2AFB9C8300544271 /* Assets.xcassets */,
 				45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */,
@@ -97,13 +80,22 @@
 			path = CatCafe;
 			sourceTree = "<group>";
 		};
-		EE64A8CC5C95AF794567D69E /* Pods */ = {
+		45A0CB5E2AFC1E1300544271 /* Burgers */ = {
 			isa = PBXGroup;
 			children = (
-				E39E3EA21268329DA00DCA21 /* Pods-CatCafe.debug.xcconfig */,
-				EC34D17437A42F9897068547 /* Pods-CatCafe.release.xcconfig */,
+				45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */,
+				45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */,
 			);
-			path = Pods;
+			path = Burgers;
+			sourceTree = "<group>";
+		};
+		45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */,
+				45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */,
+			);
+			path = BurgersTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +105,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45A0CB552AFB9C8300544271 /* Build configuration list for PBXNativeTarget "CatCafe" */;
 			buildPhases = (
-				5D9404B532B0E74405F511F3 /* [CP] Check Pods Manifest.lock */,
 				45A0CB3D2AFB9C8100544271 /* Sources */,
 				45A0CB3E2AFB9C8100544271 /* Frameworks */,
 				45A0CB3F2AFB9C8100544271 /* Resources */,
-				45A0CB692AFD111E00544271 /* Embed Frameworks */,
-				9064810FBA65B6CC62CE3C5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,62 +158,25 @@
 			files = (
 				45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */,
 				45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */,
+				45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */,
 				45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */,
+				45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5D9404B532B0E74405F511F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CatCafe-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9064810FBA65B6CC62CE3C5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45A0CB3D2AFB9C8100544271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A0CB492AFB9C8100544271 /* ViewController.swift in Sources */,
+				45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */,
 				45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */,
+				45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */,
 				45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */,
+				45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */,
+				45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +239,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -350,7 +302,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -371,7 +323,6 @@
 		};
 		45A0CB562AFB9C8300544271 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E39E3EA21268329DA00DCA21 /* Pods-CatCafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,7 +351,6 @@
 		};
 		45A0CB572AFB9C8300544271 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC34D17437A42F9897068547 /* Pods-CatCafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
