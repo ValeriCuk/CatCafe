@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB442AFB9C8100544271 /* AppDelegate.swift */; };
+		45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB462AFB9C8100544271 /* SceneDelegate.swift */; };
+		45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */; };
+		45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4A2AFB9C8100544271 /* Main.storyboard */; };
+		45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4D2AFB9C8300544271 /* Assets.xcassets */; };
+		45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */; };
+		45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */; };
+		45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5A2AFC163800544271 /* MenuViewController.swift */; };
+		45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */; };
+		45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */; };
+		45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45A0CB412AFB9C8100544271 /* CatCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A0CB442AFB9C8100544271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45A0CB462AFB9C8100544271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCafeViewController.swift; sourceTree = "<group>"; };
+		45A0CB4B2AFB9C8100544271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45A0CB4D2AFB9C8300544271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45A0CB502AFB9C8300544271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45A0CB522AFB9C8300544271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatCafeHomeScreen.storyboard; sourceTree = "<group>"; };
+		45A0CB5A2AFC163800544271 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewController.swift; sourceTree = "<group>"; };
+		45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewCell.swift; sourceTree = "<group>"; };
+		45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BurgersTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A0CB3E2AFB9C8100544271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45A0CB382AFB9C8100544271 = {
+			isa = PBXGroup;
+			children = (
+				45A0CB432AFB9C8100544271 /* CatCafe */,
+				45A0CB422AFB9C8100544271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45A0CB422AFB9C8100544271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB412AFB9C8100544271 /* CatCafe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45A0CB432AFB9C8100544271 /* CatCafe */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB442AFB9C8100544271 /* AppDelegate.swift */,
+				45A0CB462AFB9C8100544271 /* SceneDelegate.swift */,
+				45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */,
+				45A0CB5A2AFC163800544271 /* MenuViewController.swift */,
+				45A0CB5E2AFC1E1300544271 /* Burgers */,
+				45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */,
+				45A0CB4A2AFB9C8100544271 /* Main.storyboard */,
+				45A0CB4D2AFB9C8300544271 /* Assets.xcassets */,
+				45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */,
+				45A0CB522AFB9C8300544271 /* Info.plist */,
+			);
+			path = CatCafe;
+			sourceTree = "<group>";
+		};
+		45A0CB5E2AFC1E1300544271 /* Burgers */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */,
+				45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */,
+			);
+			path = Burgers;
+			sourceTree = "<group>";
+		};
+		45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */,
+				45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */,
+			);
+			path = BurgersTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45A0CB402AFB9C8100544271 /* CatCafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A0CB552AFB9C8300544271 /* Build configuration list for PBXNativeTarget "CatCafe" */;
+			buildPhases = (
+				45A0CB3D2AFB9C8100544271 /* Sources */,
+				45A0CB3E2AFB9C8100544271 /* Frameworks */,
+				45A0CB3F2AFB9C8100544271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatCafe;
+			productName = CatCafe;
+			productReference = 45A0CB412AFB9C8100544271 /* CatCafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45A0CB392AFB9C8100544271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					45A0CB402AFB9C8100544271 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 45A0CB3C2AFB9C8100544271 /* Build configuration list for PBXProject "CatCafe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45A0CB382AFB9C8100544271;
+			productRefGroup = 45A0CB422AFB9C8100544271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45A0CB402AFB9C8100544271 /* CatCafe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45A0CB3F2AFB9C8100544271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */,
+				45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */,
+				45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */,
+				45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */,
+				45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A0CB3D2AFB9C8100544271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */,
+				45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */,
+				45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */,
+				45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */,
+				45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */,
+				45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45A0CB4A2AFB9C8100544271 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A0CB4B2AFB9C8100544271 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A0CB502AFB9C8300544271 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45A0CB532AFB9C8300544271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45A0CB542AFB9C8300544271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45A0CB562AFB9C8300544271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 364SL2SBAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatCafe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kauri-and-Co.CatCafe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45A0CB572AFB9C8300544271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 364SL2SBAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatCafe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kauri-and-Co.CatCafe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45A0CB3C2AFB9C8100544271 /* Build configuration list for PBXProject "CatCafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A0CB532AFB9C8300544271 /* Debug */,
+				45A0CB542AFB9C8300544271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45A0CB552AFB9C8300544271 /* Build configuration list for PBXNativeTarget "CatCafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A0CB562AFB9C8300544271 /* Debug */,
+				45A0CB572AFB9C8300544271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45A0CB392AFB9C8100544271 /* Project object */;
+}

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4qY-2J-IVu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="68y-nf-Rt7">
+            <objects>
+                <navigationController id="4qY-2J-IVu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" id="aGr-EC-BPz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LFG-no-5Te" kind="relationship" relationship="rootViewController" id="gxZ-bm-vmm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xw-rQ-Nib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="131"/>
+        </scene>
+        <!--Cat Cafe View Controller-->
+        <scene sceneID="deI-2I-t68">
+            <objects>
+                <viewController id="LFG-no-5Te" customClass="CatCafeViewController" customModule="CatCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ea8-7G-GSX"/>
+                        <viewControllerLayoutGuide type="bottom" id="OO7-X3-nVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PLE-6l-IGf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD0-Wb-ceG">
+                                <rect key="frame" x="60" y="203" width="273" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="nVV-hZ-fdd"/>
+                                </constraints>
+                                <string key="text">🐾🐾🐾🐾🐾🐾
+🐾 Welcome  🐾
+🐾      to       🐾
+🐾 Cat Cafe  🐾
+🐾🐾🐾🐾🐾🐾
+  ╱|、
+  (˚ˎ 。7  
+   |、˜〵          
+        じしˍ,)ノ</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="0.46642450729263624" green="0.21584851564056959" blue="0.59405335524949487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9h-HQ-hXZ">
+                                <rect key="frame" x="121" y="637" width="151" height="81"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.086274509803921567" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Lio-ae-WQI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="tintColor" red="0.67689419517414962" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="MEOWnu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IRZ-p8-84L" kind="show" id="yRj-xJ-d5l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OO7-X3-nVt" firstAttribute="top" secondItem="a9h-HQ-hXZ" secondAttribute="bottom" constant="100" id="48o-PS-HuO"/>
+                            <constraint firstAttribute="trailing" secondItem="a9h-HQ-hXZ" secondAttribute="trailing" constant="121" id="6hb-F8-y6w"/>
+                            <constraint firstItem="a9h-HQ-hXZ" firstAttribute="leading" secondItem="PLE-6l-IGf" secondAttribute="leading" constant="121" id="8Pb-eX-drj"/>
+                            <constraint firstItem="uD0-Wb-ceG" firstAttribute="top" secondItem="ea8-7G-GSX" secondAttribute="bottom" constant="100" id="R4d-Fe-t92"/>
+                            <constraint firstAttribute="trailing" secondItem="uD0-Wb-ceG" secondAttribute="trailing" constant="60" id="pEP-qe-fFz"/>
+                            <constraint firstItem="uD0-Wb-ceG" firstAttribute="leading" secondItem="PLE-6l-IGf" secondAttribute="leading" constant="60" id="pb6-O0-riK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dWy-b3-Bft"/>
+                    <connections>
+                        <outlet property="menuButton" destination="a9h-HQ-hXZ" id="0Tu-0E-E9l"/>
+                        <outlet property="titleLable" destination="uD0-Wb-ceG" id="5Fc-0m-ABq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dk-HL-yKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838.93129770992368" y="130.98591549295776"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="mO7-W8-DMA">
+            <objects>
+                <viewController id="IRZ-p8-84L" userLabel="Menu View Controller" customClass="MenuViewController" customModule="CatCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T5K-jU-pyA"/>
+                        <viewControllerLayoutGuide type="bottom" id="xpe-Zl-E27"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="870-iK-xwH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uc-C5-Iq5">
+                                <rect key="frame" x="121" y="260" width="151" height="81"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.086274509799999996" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="pQ8-HY-mnq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="tintColor" red="0.67689419520000005" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Burgers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MJI-DU-gDz" kind="show" id="7cE-45-aJa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t4-wg-jWi">
+                                <rect key="frame" x="121" y="530" width="151" height="81"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.086274509799999996" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="98m-ck-bby"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="tintColor" red="0.67689419520000005" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Desserts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0he-IF-IIz">
+                                <rect key="frame" x="121" y="395" width="151" height="81"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.086274509799999996" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="WZm-aQ-lUg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="tintColor" red="0.67689419520000005" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Drinks">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0he-IF-IIz" secondAttribute="trailing" constant="121" id="3DQ-cu-Zzj"/>
+                            <constraint firstItem="7t4-wg-jWi" firstAttribute="top" secondItem="0he-IF-IIz" secondAttribute="bottom" constant="54" id="GyJ-jY-Sxd"/>
+                            <constraint firstItem="5uc-C5-Iq5" firstAttribute="top" secondItem="T5K-jU-pyA" secondAttribute="bottom" constant="157" id="Ou2-j8-6nA"/>
+                            <constraint firstItem="7t4-wg-jWi" firstAttribute="leading" secondItem="870-iK-xwH" secondAttribute="leading" constant="121" id="P3S-Ra-BZZ"/>
+                            <constraint firstAttribute="trailing" secondItem="7t4-wg-jWi" secondAttribute="trailing" constant="121" id="RRO-9v-Fk2"/>
+                            <constraint firstItem="7t4-wg-jWi" firstAttribute="top" secondItem="0he-IF-IIz" secondAttribute="bottom" constant="54" id="Vpr-zG-tzp"/>
+                            <constraint firstItem="0he-IF-IIz" firstAttribute="top" secondItem="5uc-C5-Iq5" secondAttribute="bottom" constant="54" id="fkJ-18-rw5"/>
+                            <constraint firstItem="0he-IF-IIz" firstAttribute="top" secondItem="5uc-C5-Iq5" secondAttribute="bottom" constant="54" id="g7O-cV-a4r"/>
+                            <constraint firstItem="0he-IF-IIz" firstAttribute="leading" secondItem="870-iK-xwH" secondAttribute="leading" constant="121" id="nxv-4H-TDk"/>
+                            <constraint firstItem="5uc-C5-Iq5" firstAttribute="leading" secondItem="870-iK-xwH" secondAttribute="leading" constant="121" id="qAA-V5-k4c"/>
+                            <constraint firstAttribute="trailing" secondItem="5uc-C5-Iq5" secondAttribute="trailing" constant="121" id="xam-2A-BoR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aah-O2-VjR"/>
+                    <connections>
+                        <outlet property="burgersButton" destination="5uc-C5-Iq5" id="JtP-PM-hxV"/>
+                        <outlet property="dessertsButton" destination="7t4-wg-jWi" id="JmL-NN-2rY"/>
+                        <outlet property="drinksButton" destination="0he-IF-IIz" id="BSD-1j-8rD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JoE-ns-b5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="131"/>
+        </scene>
+        <!--Burgers Table View Controller-->
+        <scene sceneID="Axp-w5-PV0">
+            <objects>
+                <tableViewController id="MJI-DU-gDz" userLabel="Burgers Table View Controller" customClass="BurgersTableViewController" customModule="CatCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ee4-X2-cFb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.81176470590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BurgersTableViewCell" rowHeight="166" id="6ER-TL-8Hi">
+                                <rect key="frame" x="0.0" y="50" width="393" height="166"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ER-TL-8Hi" id="Sah-l8-5eA">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MJI-DU-gDz" id="JKO-gr-jPr"/>
+                            <outlet property="delegate" destination="MJI-DU-gDz" id="13h-zn-jqX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EQ5-k3-6au"/>
+                    <connections>
+                        <outlet property="burgersTableView" destination="Ee4-X2-cFb" id="5jy-bP-umY"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uax-Yx-o8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="-192"/>
+        </scene>
+    </scenes>
+</document>
