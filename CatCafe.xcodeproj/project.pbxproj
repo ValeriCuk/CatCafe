@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EE74572618CB8BF33555C36 /* Pods_CatCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */; };
 		45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB442AFB9C8100544271 /* AppDelegate.swift */; };
 		45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB462AFB9C8100544271 /* SceneDelegate.swift */; };
 		45A0CB492AFB9C8100544271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* ViewController.swift */; };
 		45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4A2AFB9C8100544271 /* Main.storyboard */; };
 		45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4D2AFB9C8300544271 /* Assets.xcassets */; };
 		45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB4F2AFB9C8300544271 /* LaunchScreen.storyboard */; };
+		45A0CB672AFD111E00544271 /* Pods_CatCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */; };
+		45A0CB682AFD111E00544271 /* Pods_CatCafe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45A0CB692AFD111E00544271 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45A0CB682AFD111E00544271 /* Pods_CatCafe.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		285A140BAE0C8D830174E660 /* Pods_CatCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE74572618CB8BF33555C36 /* Pods_CatCafe.framework in Frameworks */,
+				45A0CB672AFD111E00544271 /* Pods_CatCafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +103,6 @@
 				E39E3EA21268329DA00DCA21 /* Pods-CatCafe.debug.xcconfig */,
 				EC34D17437A42F9897068547 /* Pods-CatCafe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,7 +117,8 @@
 				45A0CB3D2AFB9C8100544271 /* Sources */,
 				45A0CB3E2AFB9C8100544271 /* Frameworks */,
 				45A0CB3F2AFB9C8100544271 /* Resources */,
-				509613B1A40FE9E075E4C024 /* [CP] Embed Pods Frameworks */,
+				45A0CB692AFD111E00544271 /* Embed Frameworks */,
+				9064810FBA65B6CC62CE3C5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,23 +176,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		509613B1A40FE9E075E4C024 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5D9404B532B0E74405F511F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +196,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9064810FBA65B6CC62CE3C5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatCafe/Pods-CatCafe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -272,7 +287,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -335,7 +350,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
