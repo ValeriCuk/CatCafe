@@ -21,7 +21,6 @@ class APIManager{
             guard let data else {return}
             if let catCafe = try? JSONDecoder().decode(CatCafe.self, from: data){
                 completion(catCafe.menu)
-                print(catCafe.menu.burgers)
             } else {
                 print("FAIL")
             }

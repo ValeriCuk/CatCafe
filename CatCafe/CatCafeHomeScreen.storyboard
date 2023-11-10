@@ -115,7 +115,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MJI-DU-gDz" kind="show" id="7cE-45-aJa"/>
+                                    <action selector="burgersButtonPressed:" destination="IRZ-p8-84L" eventType="touchUpInside" id="aRM-YW-qKD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t4-wg-jWi">
@@ -130,6 +130,9 @@
                                 <state key="normal" title="Desserts">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="dessertsButtonPressed:" destination="IRZ-p8-84L" eventType="touchUpInside" id="t6O-dB-RKN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0he-IF-IIz">
                                 <rect key="frame" x="121" y="395" width="151" height="81"/>
@@ -143,6 +146,9 @@
                                 <state key="normal" title="Drinks">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="drinksButtonPressed:" destination="IRZ-p8-84L" eventType="touchUpInside" id="dfY-5e-w84"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,38 +177,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JoE-ns-b5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657" y="131"/>
-        </scene>
-        <!--Burgers Table View Controller-->
-        <scene sceneID="Axp-w5-PV0">
-            <objects>
-                <tableViewController id="MJI-DU-gDz" userLabel="Burgers Table View Controller" customClass="BurgersTableViewController" customModule="CatCafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ee4-X2-cFb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.95686274510000002" green="0.81176470590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BurgersTableViewCell" rowHeight="200" id="6ER-TL-8Hi">
-                                <rect key="frame" x="0.0" y="50" width="393" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ER-TL-8Hi" id="Sah-l8-5eA">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="MJI-DU-gDz" id="JKO-gr-jPr"/>
-                            <outlet property="delegate" destination="MJI-DU-gDz" id="13h-zn-jqX"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="EQ5-k3-6au"/>
-                    <connections>
-                        <outlet property="burgersTableView" destination="Ee4-X2-cFb" id="5jy-bP-umY"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uax-Yx-o8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2596" y="-192"/>
         </scene>
     </scenes>
 </document>

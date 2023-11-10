@@ -17,10 +17,16 @@
 		45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */; };
 		45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5A2AFC163800544271 /* MenuViewController.swift */; };
 		45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */; };
-		45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */; };
-		45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */; };
+		45A0CB622AFC1E8C00544271 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB602AFC1E8C00544271 /* MenuTableViewCell.swift */; };
+		45A0CB632AFC1E8C00544271 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB612AFC1E8C00544271 /* MenuTableViewCell.xib */; };
 		45A0CB6B2AFD1CF400544271 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB6A2AFD1CF400544271 /* APIManager.swift */; };
 		45A0CB6D2AFD346600544271 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB6C2AFD346600544271 /* MenuData.swift */; };
+		45A0CB722AFE045900544271 /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB712AFE045900544271 /* DrinksTableViewController.swift */; };
+		45A0CB752AFE075400544271 /* DessertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB742AFE075400544271 /* DessertTableViewController.swift */; };
+		45A0CB772AFE0AF400544271 /* DessertTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB762AFE0AF400544271 /* DessertTableViewController.storyboard */; };
+		45A0CB792AFE1CD800544271 /* BurgersTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB782AFE1CD800544271 /* BurgersTableViewController.storyboard */; };
+		45A0CB7B2AFE1D1B00544271 /* DrinksTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A0CB7A2AFE1D1B00544271 /* DrinksTableViewController.storyboard */; };
+		45A0CB7F2AFE23F800544271 /* MenuSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB7E2AFE23F800544271 /* MenuSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +42,16 @@
 		45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatCafeHomeScreen.storyboard; sourceTree = "<group>"; };
 		45A0CB5A2AFC163800544271 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewController.swift; sourceTree = "<group>"; };
-		45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgersTableViewCell.swift; sourceTree = "<group>"; };
-		45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BurgersTableViewCell.xib; sourceTree = "<group>"; };
+		45A0CB602AFC1E8C00544271 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		45A0CB612AFC1E8C00544271 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		45A0CB6A2AFD1CF400544271 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		45A0CB6C2AFD346600544271 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
+		45A0CB712AFE045900544271 /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
+		45A0CB742AFE075400544271 /* DessertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertTableViewController.swift; sourceTree = "<group>"; };
+		45A0CB762AFE0AF400544271 /* DessertTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DessertTableViewController.storyboard; sourceTree = "<group>"; };
+		45A0CB782AFE1CD800544271 /* BurgersTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BurgersTableViewController.storyboard; sourceTree = "<group>"; };
+		45A0CB7A2AFE1D1B00544271 /* DrinksTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrinksTableViewController.storyboard; sourceTree = "<group>"; };
+		45A0CB7E2AFE23F800544271 /* MenuSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSingleton.swift; sourceTree = "<group>"; };
 		B9E205E6AD5489830D970419 /* Pods-CatCafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCafe.release.xcconfig"; path = "Target Support Files/Pods-CatCafe/Pods-CatCafe.release.xcconfig"; sourceTree = "<group>"; };
 		BAFEE277657717FECE881DF1 /* Pods_CatCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,9 +92,11 @@
 				45A0CB442AFB9C8100544271 /* AppDelegate.swift */,
 				45A0CB462AFB9C8100544271 /* SceneDelegate.swift */,
 				45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */,
-				45A0CB5A2AFC163800544271 /* MenuViewController.swift */,
 				45A0CB6E2AFD389100544271 /* NetWorkManager */,
+				45A0CB802AFE240800544271 /* Menu */,
 				45A0CB5E2AFC1E1300544271 /* Burgers */,
+				45A0CB7C2AFE1E1300544271 /* Drinks */,
+				45A0CB7D2AFE1E3200544271 /* Desserts */,
 				45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */,
 				45A0CB4A2AFB9C8100544271 /* Main.storyboard */,
 				45A0CB4D2AFB9C8300544271 /* Assets.xcassets */,
@@ -96,18 +110,18 @@
 			isa = PBXGroup;
 			children = (
 				45A0CB5C2AFC1B3000544271 /* BurgersTableViewController.swift */,
-				45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */,
+				45A0CB782AFE1CD800544271 /* BurgersTableViewController.storyboard */,
 			);
 			path = Burgers;
 			sourceTree = "<group>";
 		};
-		45A0CB5F2AFC1E2900544271 /* BurgersTableViewCell */ = {
+		45A0CB5F2AFC1E2900544271 /* MenuTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				45A0CB602AFC1E8C00544271 /* BurgersTableViewCell.swift */,
-				45A0CB612AFC1E8C00544271 /* BurgersTableViewCell.xib */,
+				45A0CB602AFC1E8C00544271 /* MenuTableViewCell.swift */,
+				45A0CB612AFC1E8C00544271 /* MenuTableViewCell.xib */,
 			);
-			path = BurgersTableViewCell;
+			path = MenuTableViewCell;
 			sourceTree = "<group>";
 		};
 		45A0CB6E2AFD389100544271 /* NetWorkManager */ = {
@@ -117,6 +131,34 @@
 				45A0CB6C2AFD346600544271 /* MenuData.swift */,
 			);
 			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
+		45A0CB7C2AFE1E1300544271 /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB712AFE045900544271 /* DrinksTableViewController.swift */,
+				45A0CB7A2AFE1D1B00544271 /* DrinksTableViewController.storyboard */,
+			);
+			path = Drinks;
+			sourceTree = "<group>";
+		};
+		45A0CB7D2AFE1E3200544271 /* Desserts */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB742AFE075400544271 /* DessertTableViewController.swift */,
+				45A0CB762AFE0AF400544271 /* DessertTableViewController.storyboard */,
+			);
+			path = Desserts;
+			sourceTree = "<group>";
+		};
+		45A0CB802AFE240800544271 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				45A0CB7E2AFE23F800544271 /* MenuSingleton.swift */,
+				45A0CB5A2AFC163800544271 /* MenuViewController.swift */,
+				45A0CB5F2AFC1E2900544271 /* MenuTableViewCell */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		8FBE42D65E3862B095EE7207 /* Frameworks */ = {
@@ -198,7 +240,10 @@
 			files = (
 				45A0CB512AFB9C8300544271 /* LaunchScreen.storyboard in Resources */,
 				45A0CB4E2AFB9C8300544271 /* Assets.xcassets in Resources */,
-				45A0CB632AFC1E8C00544271 /* BurgersTableViewCell.xib in Resources */,
+				45A0CB632AFC1E8C00544271 /* MenuTableViewCell.xib in Resources */,
+				45A0CB792AFE1CD800544271 /* BurgersTableViewController.storyboard in Resources */,
+				45A0CB772AFE0AF400544271 /* DessertTableViewController.storyboard in Resources */,
+				45A0CB7B2AFE1D1B00544271 /* DrinksTableViewController.storyboard in Resources */,
 				45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */,
 				45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */,
 			);
@@ -256,10 +301,13 @@
 				45A0CB6D2AFD346600544271 /* MenuData.swift in Sources */,
 				45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */,
 				45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */,
-				45A0CB622AFC1E8C00544271 /* BurgersTableViewCell.swift in Sources */,
+				45A0CB622AFC1E8C00544271 /* MenuTableViewCell.swift in Sources */,
+				45A0CB7F2AFE23F800544271 /* MenuSingleton.swift in Sources */,
 				45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */,
 				45A0CB5B2AFC163800544271 /* MenuViewController.swift in Sources */,
 				45A0CB5D2AFC1B3000544271 /* BurgersTableViewController.swift in Sources */,
+				45A0CB722AFE045900544271 /* DrinksTableViewController.swift in Sources */,
+				45A0CB752AFE075400544271 /* DessertTableViewController.swift in Sources */,
 				45A0CB6B2AFD1CF400544271 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

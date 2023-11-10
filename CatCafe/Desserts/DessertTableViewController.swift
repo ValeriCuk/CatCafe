@@ -1,8 +1,8 @@
 import UIKit
 
-class BurgersTableViewController: UITableViewController{
+class DessertsTableViewController: UITableViewController{
     
-    @IBOutlet var burgersTableView: UITableView!
+    @IBOutlet var dessertsTableView: UITableView!
     private var menuData = Menu(burgers: [], drinks: [], desserts: [])
     
     override func viewDidLoad() {
@@ -12,9 +12,9 @@ class BurgersTableViewController: UITableViewController{
     }
     
     private func configTableView(){
-        burgersTableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
-        burgersTableView.dataSource = self
-        burgersTableView.delegate = self
+        dessertsTableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
+        dessertsTableView.dataSource = self
+        dessertsTableView.delegate = self
     }
     
     private func getDataForBurgersMenu(){
@@ -22,20 +22,20 @@ class BurgersTableViewController: UITableViewController{
             DispatchQueue.main.async {
                 guard let self else {return}
                 self.menuData = menu
-                self.burgersTableView.reloadData()
+                self.dessertsTableView.reloadData()
             }
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        menuData.burgers.count
+        menuData.desserts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as? MenuTableViewCell else{
             return UITableViewCell()
         }
-        let menuData = menuData.burgers[indexPath.row]
+        let menuData = menuData.desserts[indexPath.row]
   
         if let imagePath = menuData.image,
                let imageURL = URL(string: "\(imagePath)") {

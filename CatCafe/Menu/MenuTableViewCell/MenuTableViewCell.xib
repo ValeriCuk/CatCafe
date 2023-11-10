@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BurgersTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="BurgersTableViewCell" rowHeight="146" id="KGk-i7-Jjw" customClass="BurgersTableViewCell" customModule="CatCafe" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MenuTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="146" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="CatCafe" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="300" height="145"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -67,11 +67,11 @@
                     <constraint firstAttribute="bottom" secondItem="kDS-o7-TPk" secondAttribute="bottom" constant="17" id="cTx-fG-58P"/>
                 </constraints>
             </tableViewCellContentView>
-            <accessibility key="accessibilityConfiguration" identifier="BurgersTableViewCell"/>
+            <accessibility key="accessibilityConfiguration" identifier="MenuTableViewCell"/>
             <connections>
-                <outlet property="burgerImage" destination="kDS-o7-TPk" id="HuD-iH-zka"/>
                 <outlet property="descriptionLabel" destination="yYh-Np-FUQ" id="M69-xH-4Ef"/>
-                <outlet property="nameBurgerLabel" destination="XTB-9B-xAl" id="ZoH-Ud-E0c"/>
+                <outlet property="itemImage" destination="kDS-o7-TPk" id="HuD-iH-zka"/>
+                <outlet property="nameLabel" destination="XTB-9B-xAl" id="ZoH-Ud-E0c"/>
                 <outlet property="priceLabel" destination="Gc2-ZV-fmw" id="2c3-Dw-lIj"/>
             </connections>
             <point key="canvasLocation" x="-122.13740458015266" y="-113.02816901408451"/>
