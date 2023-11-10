@@ -1,6 +1,6 @@
 import MapKit
 
-class MapView: UIViewController {
+class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -24,7 +24,7 @@ class MapView: UIViewController {
     }
 }
 
-extension MapView: MKMapViewDelegate {
+extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard annotation is MKPointAnnotation else { return nil }

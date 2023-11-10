@@ -50,7 +50,7 @@ class CatCafeViewController: UIViewController {
     }
     
     func navigateToMapStoryboard() {
-        let otherController = UIStoryboard(name: "MapView", bundle: nil).instantiateViewController(withIdentifier: "MapView")
+        let otherController = UIStoryboard(name: "MapViewController", bundle: nil).instantiateViewController(withIdentifier: "MapViewController")
         navigationController?.pushViewController(otherController, animated: true)
     }
 }
