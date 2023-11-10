@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9h-HQ-hXZ">
-                                <rect key="frame" x="121" y="637" width="151" height="81"/>
+                                <rect key="frame" x="121" y="648" width="151" height="81"/>
                                 <color key="backgroundColor" red="0.46666666670000001" green="0.086274509803921567" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="Lio-ae-WQI"/>
@@ -69,19 +69,40 @@
                                     <segue destination="IRZ-p8-84L" kind="show" id="yRj-xJ-d5l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adg-SG-Aqu">
+                                <rect key="frame" x="121" y="762" width="151" height="37"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.086274509799999996" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="hk7-Ny-hpq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="48" id="jFc-F1-g2B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="tintColor" red="0.67689419520000005" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Find us 📍">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findUsButtonPress:" destination="LFG-no-5Te" eventType="touchUpInside" id="0oT-DS-lba"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.81176470588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="OO7-X3-nVt" firstAttribute="top" secondItem="a9h-HQ-hXZ" secondAttribute="bottom" constant="100" id="48o-PS-HuO"/>
                             <constraint firstAttribute="trailing" secondItem="a9h-HQ-hXZ" secondAttribute="trailing" constant="121" id="6hb-F8-y6w"/>
                             <constraint firstItem="a9h-HQ-hXZ" firstAttribute="leading" secondItem="PLE-6l-IGf" secondAttribute="leading" constant="121" id="8Pb-eX-drj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Adg-SG-Aqu" secondAttribute="trailing" constant="105" id="Ady-GC-cgL"/>
+                            <constraint firstItem="Adg-SG-Aqu" firstAttribute="top" secondItem="a9h-HQ-hXZ" secondAttribute="bottom" constant="33" id="QFc-ug-Gu0"/>
                             <constraint firstItem="uD0-Wb-ceG" firstAttribute="top" secondItem="ea8-7G-GSX" secondAttribute="bottom" constant="100" id="R4d-Fe-t92"/>
+                            <constraint firstItem="Adg-SG-Aqu" firstAttribute="leading" secondItem="PLE-6l-IGf" secondAttribute="leadingMargin" constant="105" id="chx-NP-t9C"/>
+                            <constraint firstItem="OO7-X3-nVt" firstAttribute="top" secondItem="Adg-SG-Aqu" secondAttribute="bottom" constant="19" id="g0v-GX-wql"/>
                             <constraint firstAttribute="trailing" secondItem="uD0-Wb-ceG" secondAttribute="trailing" constant="60" id="pEP-qe-fFz"/>
                             <constraint firstItem="uD0-Wb-ceG" firstAttribute="leading" secondItem="PLE-6l-IGf" secondAttribute="leading" constant="60" id="pb6-O0-riK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dWy-b3-Bft"/>
                     <connections>
+                        <outlet property="findUsButton" destination="Adg-SG-Aqu" id="e5B-LB-o37"/>
                         <outlet property="menuButton" destination="a9h-HQ-hXZ" id="0Tu-0E-E9l"/>
                         <outlet property="titleLable" destination="uD0-Wb-ceG" id="5Fc-0m-ABq"/>
                     </connections>
