@@ -38,17 +38,9 @@ class DessertsTableViewController: UITableViewController {
         }
         let menuData = menuSinglton.menuData.desserts[indexPath.row]
   
-        if let imagePath = menuData.image,
-               let imageURL = URL(string: "\(imagePath)") {
-                URLSession.shared.dataTask(with: imageURL) { data, _, error in
-                    if let data = data, error == nil {
-                        DispatchQueue.main.async {
-                            let image = UIImage(data: data)
-                            cell.itemImage.image = image
-                        }
-                    }
-                }.resume()
-            }
+        if let imagePath = menuData.image {
+           cell.itemImage.loadImage(with: imagePath)
+        }
         cell.nameLabel.text = menuData.name
         cell.priceLabel.text = String(menuData.price)
         cell.descriptionLabel.text = menuData.description

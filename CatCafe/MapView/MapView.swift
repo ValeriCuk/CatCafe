@@ -18,6 +18,9 @@ class MapView: UIViewController {
         cafeAnnotation.coordinate = cafeLocationCoordinate
         cafeAnnotation.title = "Cat Cafe"
         mapView.addAnnotation(cafeAnnotation)
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let region = MKCoordinateRegion(center: cafeLocationCoordinate, span: span)
+        mapView.setRegion(region, animated: true)
     }
 }
 
