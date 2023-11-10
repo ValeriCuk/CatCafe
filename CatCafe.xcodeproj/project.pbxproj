@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21173CE49E8AF4254FE875EC /* Pods_CatCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFEE277657717FECE881DF1 /* Pods_CatCafe.framework */; };
+		459124572AFE8A38009B6C58 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459124562AFE8A38009B6C58 /* MapView.storyboard */; };
+		459124592AFE8B05009B6C58 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459124582AFE8B05009B6C58 /* MapView.swift */; };
 		45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB442AFB9C8100544271 /* AppDelegate.swift */; };
 		45A0CB472AFB9C8100544271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB462AFB9C8100544271 /* SceneDelegate.swift */; };
 		45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		427B659E0A82634F5CF57956 /* Pods-CatCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCafe.debug.xcconfig"; path = "Target Support Files/Pods-CatCafe/Pods-CatCafe.debug.xcconfig"; sourceTree = "<group>"; };
+		459124562AFE8A38009B6C58 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		459124582AFE8B05009B6C58 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		45A0CB412AFB9C8100544271 /* CatCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A0CB442AFB9C8100544271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A0CB462AFB9C8100544271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4591245A2AFE8B10009B6C58 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				459124582AFE8B05009B6C58 /* MapView.swift */,
+				459124562AFE8A38009B6C58 /* MapView.storyboard */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		45A0CB382AFB9C8100544271 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +106,7 @@
 				45A0CB462AFB9C8100544271 /* SceneDelegate.swift */,
 				45A0CB482AFB9C8100544271 /* CatCafeViewController.swift */,
 				45A0CB582AFBEB5E00544271 /* CatCafeHomeScreen.storyboard */,
+				4591245A2AFE8B10009B6C58 /* MapView */,
 				45A0CB6E2AFD389100544271 /* NetWorkManager */,
 				45A0CB802AFE240800544271 /* Menu */,
 				45A0CB5E2AFC1E1300544271 /* Burgers */,
@@ -243,6 +257,7 @@
 				45A0CB632AFC1E8C00544271 /* MenuTableViewCell.xib in Resources */,
 				45A0CB792AFE1CD800544271 /* BurgersTableViewController.storyboard in Resources */,
 				45A0CB772AFE0AF400544271 /* DessertTableViewController.storyboard in Resources */,
+				459124572AFE8A38009B6C58 /* MapView.storyboard in Resources */,
 				45A0CB7B2AFE1D1B00544271 /* DrinksTableViewController.storyboard in Resources */,
 				45A0CB4C2AFB9C8100544271 /* Main.storyboard in Resources */,
 				45A0CB592AFBEB5E00544271 /* CatCafeHomeScreen.storyboard in Resources */,
@@ -299,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A0CB6D2AFD346600544271 /* MenuData.swift in Sources */,
+				459124592AFE8B05009B6C58 /* MapView.swift in Sources */,
 				45A0CB492AFB9C8100544271 /* CatCafeViewController.swift in Sources */,
 				45A0CB452AFB9C8100544271 /* AppDelegate.swift in Sources */,
 				45A0CB622AFC1E8C00544271 /* MenuTableViewCell.swift in Sources */,

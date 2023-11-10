@@ -83,7 +83,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="findUsButtonPress:" destination="LFG-no-5Te" eventType="touchUpInside" id="0oT-DS-lba"/>
+                                    <action selector="findUsButtonPress:" destination="LFG-no-5Te" eventType="touchUpInside" id="qkI-rs-UOp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,8 +102,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="dWy-b3-Bft"/>
                     <connections>
-                        <outlet property="findUsButton" destination="Adg-SG-Aqu" id="e5B-LB-o37"/>
-                        <outlet property="menuButton" destination="a9h-HQ-hXZ" id="0Tu-0E-E9l"/>
+                        <outlet property="findUsButton" destination="Adg-SG-Aqu" id="iLF-jT-SCm"/>
+                        <outlet property="menuButton" destination="a9h-HQ-hXZ" id="Nv3-Tm-2yF"/>
                         <outlet property="titleLable" destination="uD0-Wb-ceG" id="5Fc-0m-ABq"/>
                     </connections>
                 </viewController>

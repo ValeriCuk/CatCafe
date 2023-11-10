@@ -8,7 +8,6 @@ struct Menu: Codable {
     let burgers, drinks, desserts: [Detail]
 }
 
-
 struct Detail: Codable {
     let name, description: String
     let price: Double

@@ -1,8 +1,9 @@
 import UIKit
 
-class BurgersTableViewController: UITableViewController{
+class BurgersTableViewController: UITableViewController {
     
     @IBOutlet var burgersTableView: UITableView!
+    
     var menuSinglton = MenuSingleton()
     
     override func viewDidLoad() {
@@ -11,13 +12,13 @@ class BurgersTableViewController: UITableViewController{
         getDataForBurgersMenu()
     }
     
-    private func configTableView(){
+    private func configTableView() {
         burgersTableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
         burgersTableView.dataSource = self
         burgersTableView.delegate = self
     }
     
-    private func getDataForBurgersMenu(){
+    private func getDataForBurgersMenu() {
         APIManager.shared.getData{ [weak self] menu in
             DispatchQueue.main.async {
                 guard let self else {return}

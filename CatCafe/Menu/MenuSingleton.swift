@@ -8,6 +8,7 @@
 import Foundation
 
 class MenuSingleton {
+    
     static let shared = MenuSingleton()
     var menuData = Menu(burgers: [], drinks: [], desserts: [])
 }

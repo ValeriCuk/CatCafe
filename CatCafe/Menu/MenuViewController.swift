@@ -1,12 +1,13 @@
 import UIKit
 
-enum TypesOfDishes{
+enum TypesOfDishes {
+    
     case burgers
     case drinks
     case dessrts
 }
 
-class MenuViewController: UIViewController{
+class MenuViewController: UIViewController {
     
     @IBOutlet weak var burgersButton: UIButton!
     @IBOutlet weak var drinksButton: UIButton!
@@ -27,13 +28,13 @@ class MenuViewController: UIViewController{
         addBordersButtons()
     }
     
-    private func addBordersButtons(){
+    private func addBordersButtons() {
         addApparanceButton(button: burgersButton)
         addApparanceButton(button: drinksButton)
         addApparanceButton(button: dessertsButton)
     }
     
-    private func addApparanceButton(button: UIButton){
+    private func addApparanceButton(button: UIButton) {
         button.layer.cornerRadius = 26
         button.layer.borderWidth = 1
         button.layer.masksToBounds = true
@@ -51,7 +52,7 @@ class MenuViewController: UIViewController{
         }
     }
     
-    private func goToOtherStoryboard(type: TypesOfDishes){
+    private func goToOtherStoryboard(type: TypesOfDishes) {
         let name = storyboardID(type)
         let otherStoryboard = UIStoryboard(name: name, bundle: nil)
         if let otherViewController = otherStoryboard.instantiateViewController(withIdentifier: name) as? UITableViewController {

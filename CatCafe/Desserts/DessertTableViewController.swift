@@ -1,8 +1,9 @@
 import UIKit
 
-class DessertsTableViewController: UITableViewController{
+class DessertsTableViewController: UITableViewController {
     
     @IBOutlet var dessertsTableView: UITableView!
+    
     var menuSinglton = MenuSingleton()
     
     override func viewDidLoad() {
@@ -11,13 +12,13 @@ class DessertsTableViewController: UITableViewController{
         getDataForDessertMenu()
     }
     
-    private func configTableView(){
+    private func configTableView() {
         dessertsTableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
         dessertsTableView.dataSource = self
         dessertsTableView.delegate = self
     }
     
-    private func getDataForDessertMenu(){
+    private func getDataForDessertMenu() {
         APIManager.shared.getData{ [weak self] menu in
             DispatchQueue.main.async {
                 guard let self else {return}
@@ -32,7 +33,7 @@ class DessertsTableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as? MenuTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as? MenuTableViewCell else {
             return UITableViewCell()
         }
         let menuData = menuSinglton.menuData.desserts[indexPath.row]

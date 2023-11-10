@@ -7,11 +7,12 @@
 
 import Foundation
 
-class APIManager{
+class APIManager {
+    
     static let shared = APIManager()
     let urlString = "https://0e628d4d-33ed-43b0-80e7-0b863987b119.mock.pstmn.io"
     
-    func getData(completion: @escaping (Menu) -> Void){
+    func getData(completion: @escaping (Menu) -> Void) {
         guard let url = URL(string: urlString) else {
             print("ERROR")
             return

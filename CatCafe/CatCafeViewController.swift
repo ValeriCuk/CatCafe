@@ -1,23 +1,25 @@
 import UIKit
 import CoreLocation
-import MapKit
 
 class CatCafeViewController: UIViewController {
 
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var findUsButton: UIButton!
+    
     let locationManager = CLLocationManager()
+    let cafeLocationCoordinate = CLLocationCoordinate2D(latitude: 50.406527012766595, longitude: 30.612757568865938)
     
     @IBAction func findUsButtonPress(_ sender: UIButton) {
         requestLocationPermission()
-        getCurrentLocation()
+        navigateToMapStoryboard()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavTitle()
         addButtonApparance()
+     
     }
     
     private func addNavTitle() {
@@ -29,7 +31,7 @@ class CatCafeViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
-    private func addButtonApparance(){
+    private func addButtonApparance() {
         menuButton.layer.cornerRadius = 26
         menuButton.layer.borderWidth = 1
         menuButton.layer.masksToBounds = true
@@ -37,20 +39,40 @@ class CatCafeViewController: UIViewController {
     }
     
     func requestLocationPermission() {
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled() {
+                self.locationManager.delegate = self
+                self.locationManager.requestWhenInUseAuthorization()
+            } else {
+                print("Геолокація вимкнена на пристрої")
+            }
+        }
     }
-
-    func getCurrentLocation() {
-        locationManager.startUpdatingLocation()
+    
+    func navigateToMapStoryboard() {
+        let otherController = UIStoryboard(name: "MapView", bundle: nil).instantiateViewController(withIdentifier: "MapView")
+        navigationController?.pushViewController(otherController, animated: true)
     }
 }
 
 extension CatCafeViewController: CLLocationManagerDelegate {
     
+    func getCurrentLocation() {
+        locationManager.startUpdatingLocation()
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
         manager.stopUpdatingLocation()
-        let cafeLocation = CLLocation(latitude: 50.406527012766595, longitude: 30.612757568865938)
+        let userLocation = location.coordinate
+        let cafeLocation = cafeLocationCoordinate
+        print("Користувача знаходиться на координатах: \(userLocation)")
+        print("Кафе розташоване на координатах: \(cafeLocation)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Помилка геолокації: \(error.localizedDescription)")
     }
 }
+
+
