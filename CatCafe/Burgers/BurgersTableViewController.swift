@@ -3,7 +3,7 @@ import UIKit
 class BurgersTableViewController: UITableViewController{
     
     @IBOutlet var burgersTableView: UITableView!
-    private var menuData = Menu(burgers: [], drinks: [], desserts: [])
+    var menuSinglton = MenuSingleton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,22 +21,21 @@ class BurgersTableViewController: UITableViewController{
         APIManager.shared.getData{ [weak self] menu in
             DispatchQueue.main.async {
                 guard let self else {return}
-                self.menuData = menu
+                self.menuSinglton.menuData = menu
                 self.burgersTableView.reloadData()
             }
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        menuData.burgers.count
+        menuSinglton.menuData.burgers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as? MenuTableViewCell else{
             return UITableViewCell()
         }
-        let menuData = menuData.burgers[indexPath.row]
-  
+        let menuData = menuSinglton.menuData.burgers[indexPath.row]
         if let imagePath = menuData.image,
                let imageURL = URL(string: "\(imagePath)") {
                 URLSession.shared.dataTask(with: imageURL) { data, _, error in
@@ -49,7 +48,8 @@ class BurgersTableViewController: UITableViewController{
                 }.resume()
             }
         cell.nameLabel.text = menuData.name
-        
+        cell.priceLabel.text = String(menuData.price)
+        cell.descriptionLabel.text = menuData.description
         cell.backgroundColor = UIColor(red: 244/255, green: 207/255, blue: 255/255, alpha: 1)
         return cell
     }

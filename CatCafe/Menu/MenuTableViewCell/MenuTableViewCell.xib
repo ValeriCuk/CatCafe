@@ -11,41 +11,32 @@
         <tableViewCell contentMode="scaleToFill" restorationIdentifier="MenuTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="146" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="CatCafe" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="300" height="145"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="300" height="145"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDS-o7-TPk">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDS-o7-TPk">
                         <rect key="frame" x="5" y="41" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="60" id="Gdn-H8-ZkI"/>
-                            <constraint firstAttribute="width" constant="60" id="Nzk-i9-LgH"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CatBurger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTB-9B-xAl">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="CatBurger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTB-9B-xAl">
                         <rect key="frame" x="5" y="15" width="290" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="25" id="RQ7-eR-ksR"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Delicious burger with special sauce&quot;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYh-Np-FUQ">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="900" fixedFrame="YES" text="&quot;Delicious burger with special sauce&quot;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYh-Np-FUQ">
                         <rect key="frame" x="70" y="45" width="225" height="54"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="54" id="UqW-We-lvw"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-ZV-fmw">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-ZV-fmw">
                         <rect key="frame" x="142.66666666666666" y="104" width="80" height="16"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="80" id="6rA-WL-CVT"/>
-                            <constraint firstAttribute="height" constant="16" id="9hb-lp-RNw"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -53,19 +44,6 @@
                 </subviews>
                 <color key="backgroundColor" red="0.46666666670000001" green="0.2156862745" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <constraints>
-                    <constraint firstItem="kDS-o7-TPk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="1rO-Vn-0Sk"/>
-                    <constraint firstItem="XTB-9B-xAl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5L1-Mc-64Q"/>
-                    <constraint firstAttribute="trailing" secondItem="XTB-9B-xAl" secondAttribute="trailing" constant="5" id="7in-7c-2kH"/>
-                    <constraint firstItem="Gc2-ZV-fmw" firstAttribute="centerX" secondItem="yYh-Np-FUQ" secondAttribute="centerX" id="8R3-oC-XLo"/>
-                    <constraint firstItem="yYh-Np-FUQ" firstAttribute="top" secondItem="XTB-9B-xAl" secondAttribute="bottom" constant="5" id="EgI-59-t6h"/>
-                    <constraint firstItem="XTB-9B-xAl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="FcZ-Fe-R4L"/>
-                    <constraint firstAttribute="trailing" secondItem="yYh-Np-FUQ" secondAttribute="trailing" constant="5" id="GB6-7V-zf3"/>
-                    <constraint firstItem="kDS-o7-TPk" firstAttribute="top" secondItem="XTB-9B-xAl" secondAttribute="bottom" constant="1" id="Kts-SY-2rB"/>
-                    <constraint firstItem="Gc2-ZV-fmw" firstAttribute="top" secondItem="yYh-Np-FUQ" secondAttribute="bottom" constant="5" id="LMU-jf-Jdz"/>
-                    <constraint firstItem="yYh-Np-FUQ" firstAttribute="leading" secondItem="kDS-o7-TPk" secondAttribute="trailing" constant="5" id="Q6P-S2-Sgy"/>
-                    <constraint firstAttribute="bottom" secondItem="kDS-o7-TPk" secondAttribute="bottom" constant="17" id="cTx-fG-58P"/>
-                </constraints>
             </tableViewCellContentView>
             <accessibility key="accessibilityConfiguration" identifier="MenuTableViewCell"/>
             <connections>

@@ -9,10 +9,5 @@ import Foundation
 
 class MenuSingleton {
     static let shared = MenuSingleton()
-    private init() {
-    }
-    
-    func doSomething() {
-        print("Doing something...")
-    }
+    var menuData = Menu(burgers: [], drinks: [], desserts: [])
 }

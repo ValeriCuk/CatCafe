@@ -3,12 +3,12 @@ import UIKit
 class DessertsTableViewController: UITableViewController{
     
     @IBOutlet var dessertsTableView: UITableView!
-    private var menuData = Menu(burgers: [], drinks: [], desserts: [])
+    var menuSinglton = MenuSingleton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-        getDataForBurgersMenu()
+        getDataForDessertMenu()
     }
     
     private func configTableView(){
@@ -17,25 +17,25 @@ class DessertsTableViewController: UITableViewController{
         dessertsTableView.delegate = self
     }
     
-    private func getDataForBurgersMenu(){
+    private func getDataForDessertMenu(){
         APIManager.shared.getData{ [weak self] menu in
             DispatchQueue.main.async {
                 guard let self else {return}
-                self.menuData = menu
+                self.menuSinglton.menuData = menu
                 self.dessertsTableView.reloadData()
             }
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        menuData.desserts.count
+        menuSinglton.menuData.desserts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as? MenuTableViewCell else{
             return UITableViewCell()
         }
-        let menuData = menuData.desserts[indexPath.row]
+        let menuData = menuSinglton.menuData.desserts[indexPath.row]
   
         if let imagePath = menuData.image,
                let imageURL = URL(string: "\(imagePath)") {
@@ -49,7 +49,8 @@ class DessertsTableViewController: UITableViewController{
                 }.resume()
             }
         cell.nameLabel.text = menuData.name
-        
+        cell.priceLabel.text = String(menuData.price)
+        cell.descriptionLabel.text = menuData.description
         cell.backgroundColor = UIColor(red: 244/255, green: 207/255, blue: 255/255, alpha: 1)
         return cell
     }
